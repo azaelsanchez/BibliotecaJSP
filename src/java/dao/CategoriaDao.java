@@ -18,7 +18,7 @@ import model.Categoria;
  *
  * @author RaNmA
  */
-public class CategoriaDAO {
+public class CategoriaDao {
     public static boolean registrar(Categoria cat){
         try {
             String SQL="insert into categorias(nombre) values(?);";

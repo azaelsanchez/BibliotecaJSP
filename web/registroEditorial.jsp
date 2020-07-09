@@ -1,6 +1,6 @@
 <%-- 
-    Document   : registroCategoria
-    Created on : 09-jul-2020, 13:27:36
+    Document   : registroEditorial
+    Created on : 10-jul-2020, 0:03:13
     Author     : RaNmA
 --%>
 
@@ -10,7 +10,7 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
-		<title>Gestión de libros</title>
+		<title>Gestión de Editorial</title>
 
 		<meta name="description" content="Azael Sánchez" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -550,7 +550,7 @@
 								<div class="row">
 									<div class="col-xs-12">
 										<div class="table-header">
-											Registro de categorías
+											Registro de editorial
 										</div>
 
 										<!-- div.table-responsive -->
@@ -560,10 +560,10 @@
                                                                                     <form action="CategoriaControl" method="POST" class="form-horizontal">
                                                                                         <div class="form-group">
                                                                                             <label class="col-sm-3 control-label no-padding-right">
-                                                                                                Código:
+                                                                                                Nit:
                                                                                             </label>
                                                                                             <div class="col-sm-9">
-                                                                                                <input type="text" name="codigo" value="" placeholder="Código de la categoria" />
+                                                                                                <input type="text" name="nit" value="" placeholder="Nit de la editorial" />
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="form-group">
@@ -571,9 +571,41 @@
                                                                                                 Nombre:
                                                                                             </label>
                                                                                             <div class="col-sm-9">
-                                                                                                <input type="text" name="nombre" value="" placeholder="Nombre de la categoria" />
+                                                                                                <input type="text" name="nombre" value="" placeholder="Nombre de la editorial" />
                                                                                             </div>
+                                                                                        </div>
+                                                                                        <div class="form-group">
+                                                                                            <label class="col-sm-3 control-label no-padding-right">
+                                                                                                Dirección:
+                                                                                            </label>
+                                                                                            <div class="col-sm-9">
+                                                                                                <input type="text" name="direccion" value="" placeholder="Direccion de la editorial" />
                                                                                             </div>
+                                                                                        </div>
+                                                                                        <div class="form-group">
+                                                                                            <label class="col-sm-3 control-label no-padding-right">
+                                                                                                Email:
+                                                                                            </label>
+                                                                                            <div class="col-sm-9">
+                                                                                                <input type="text" name="email" value="" placeholder="Email de la editorial" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group">
+                                                                                            <label class="col-sm-3 control-label no-padding-right">
+                                                                                                Sitioweb:
+                                                                                            </label>
+                                                                                            <div class="col-sm-9">
+                                                                                                <input type="text" name="sitioweb" value="" placeholder="Sitioweb de la editorial" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group">
+                                                                                            <label class="col-sm-3 control-label no-padding-right">
+                                                                                                Telefono: 
+                                                                                            </label>
+                                                                                            <div class="col-sm-9">
+                                                                                                <input type="text" name="telefono" value="" placeholder="Telefono de la editorial" />
+                                                                                            </div>
+                                                                                        </div>
                                                                                             <button class="btn btn-success" type="submit">
                                                                                             <i class="fa fa-save"></i>
                                                                                             Registrar

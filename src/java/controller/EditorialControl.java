@@ -5,20 +5,18 @@
  */
 package controller;
 
-import dao.CategoriaDao;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.Categoria;
 
 /**
  *
  * @author RaNmA
  */
-public class CategoriaControl extends HttpServlet {
+public class EditorialControl extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,10 +35,10 @@ public class CategoriaControl extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet CategoriaControl</title>");            
+            out.println("<title>Servlet EditorialControl</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet CategoriaControl at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet EditorialControl at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -72,15 +70,7 @@ public class CategoriaControl extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-           String nombre=request.getParameter("nombre");
-           Categoria c=new Categoria();
-           c.setNombre(nombre);
-           if(CategoriaDao.registrar(c)){
-               request.setAttribute("mensaje", "La categoria fue registrada.");
-           }else{
-               request.setAttribute("mensaje", "La categoria no fue registrada.");
-           }
-           request.getRequestDispatcher("registroCategoria.jsp").forward(request, response);
+        
     }
 
     /**
